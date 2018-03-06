@@ -28,13 +28,8 @@ COPY ./conf/kubernetes.conf /fluentd/etc/
 
 # Copy plugins
 COPY plugins /fluentd/plugins/
-<<<<<<< HEAD
-#RUN chmod +x entrypoint.sh
-COPY entrypoint.sh /fluentd/
-=======
 RUN chmod +x entrypoint.sh
 COPY entrypoint.sh /fluentd/entrypoint.sh
->>>>>>> 3fd66ba77b5e737e6745fa9acf9596e7830c4b68
 
 #RUN chmod +x /fluentd/entrypoint.sh
 #RUN chown $USER /fluentd/entrypoint.sh
