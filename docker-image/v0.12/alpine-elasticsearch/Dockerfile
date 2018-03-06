@@ -31,7 +31,7 @@ COPY plugins /fluentd/plugins/
 COPY entrypoint.sh /fluentd/entrypoint.sh
 
 RUN chmod +x /fluentd/entrypoint.sh
-RUN chown $USER /fluentd/entrypoint.sh
+#RUN chown $USER /fluentd/entrypoint.sh
 
 # Environment variables
 ENV FLUENTD_OPT=""
