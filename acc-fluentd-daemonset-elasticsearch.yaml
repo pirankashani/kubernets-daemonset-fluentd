@@ -68,7 +68,7 @@ spec:
         effect: NoSchedule
       containers:
       - name: fluentdv0d12
-        image: piran/fluentd-elasticsearch-ds:es-fld-ds-0d12 #v0.12-elasticsearch #fluent/fluentd-kubernetes-daemonset:elasticsearch
+        image: piran/k8s-fluentd:latest #piran/fluentd-elasticsearch-ds:es-fld-ds-0d12 #v0.12-elasticsearch #fluent/fluentd-kubernetes-daemonset:elasticsearch
         env:
           - name:  FLUENT_ELASTICSEARCH_HOST
             value: "185.150.8.207" #"elasticsearch-logging"
